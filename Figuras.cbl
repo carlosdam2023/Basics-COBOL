@@ -25,19 +25,19 @@
             " en minusculas y sin accentos".
             ACCEPT Figura.
         
-        EVALUATE TRUE
-            WHEN Triangulo
-                PERFORM CalcAreaTriangulo
-            WHEN Cuadrado
-                PERFORM CalcAreaCuadrado
-            WHEN Pentagono
-                PERFORM CalcAreaPentagono
-            WHEN OTHER
-                DISPLAY "Figura no prevista"
-        END-EVALUATE.
-        
-        PERFORM MostrarResultado.
-        STOP RUN.
+              EVALUATE TRUE
+                  WHEN Triangulo
+                      PERFORM CalcAreaTriangulo
+                  WHEN Cuadrado
+                      PERFORM CalcAreaCuadrado
+                  WHEN Pentagono
+                      PERFORM CalcAreaPentagono
+                  WHEN OTHER
+                      DISPLAY "Figura no prevista"
+              END-EVALUATE.
+              
+              PERFORM MostrarResultado.
+              STOP RUN.
         
         MostrarResultado.
             IF Area-Figura NOT = 0 THEN 
